@@ -21,3 +21,4 @@ jobs:
         with:
           role-to-assume: ${{ secrets.ASSUMED_ROLE }}
           aws-region: ${{ env.region }}
+      - run: aws sts get-caller-identity
